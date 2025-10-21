@@ -7,5 +7,9 @@ public class Filme {
     int totalDeAvaliacao;
     int duracaoEmMinutos;
 
-
+    // Método
+    public void exibeFichaTecnica() {
+        System.out.println("Nome do filme: " + nome);
+        System.out.println("Ano de lançamento: " + anoDeLancamento);
+    }
 }
