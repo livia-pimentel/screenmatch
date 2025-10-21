@@ -1,11 +1,16 @@
 public class Filme {
     // Atributos
-    String nome;
-    int anoDeLancamento;
-    boolean incluidoNoPlano;
-    double somaDasAvaliacoes;
-    int totalDeAvaliacao;
-    int duracaoEmMinutos;
+    public String nome;
+    public int anoDeLancamento;
+    public boolean incluidoNoPlano;
+    private double somaDasAvaliacoes;
+    private int totalDeAvaliacao;
+    public int duracaoEmMinutos;
+
+    // Get
+    public int getTotalDeAvaliacao() {
+        return totalDeAvaliacao;
+    }
 
     // Métodos
     public void exibeFichaTecnica() {
