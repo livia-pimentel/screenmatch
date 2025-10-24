@@ -9,6 +9,12 @@ public class Titulo {
     private int totalDeAvaliacao;
     private int duracaoEmMinutos;
 
+    // Construtor
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
     // Getter e Setters
     public int getTotalDeAvaliacao() {
         return totalDeAvaliacao;

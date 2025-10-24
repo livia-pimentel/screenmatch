@@ -9,9 +9,9 @@ import java.util.Objects;
 
 public class Principal {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme("O rei leão");
+        Filme meuFilme = new Filme("O rei leão", 1992);
 //        meuFilme.setNome("Top Gun");
-        meuFilme.setAnoDeLancamento(1992);
+//        meuFilme.setAnoDeLancamento(1992);
         meuFilme.setDuracaoEmMinutos(180);
         System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
 
@@ -23,18 +23,18 @@ public class Principal {
         System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacao());
         System.out.println(meuFilme.mediaDasAvaliacao());
 
-        Serie lost = new Serie();
-        lost.setNome("Lost");
-        lost.setAnoDeLancamento(2000);
+        Serie lost = new Serie("Lost", 2000);
+//        lost.setNome("Lost");
+//        lost.setAnoDeLancamento(2000);
         lost.exibeFichaTecnica();
         lost.setTemporadas(10);
         lost.setEpisodioPorTemporada(10);
         lost.setMinutosPorEpisodio(50);
         System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme("Viva a vida é uma festa");
+        Filme outroFilme = new Filme("Viva a vida é uma festa", 2022);
 //        outroFilme.setNome("Estrelas além do tempo");
-        outroFilme.setAnoDeLancamento(2019);
+//        outroFilme.setAnoDeLancamento(2019);
         outroFilme.setDuracaoEmMinutos(120);
 
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
@@ -52,10 +52,10 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtro.filtar(episodio);
 
-        Filme maisUmFilme = new Filme("Pateta o filme");
+        Filme maisUmFilme = new Filme("Pateta o filme", 1993);
 //        maisUmFilme.setNome("Hércules");
         maisUmFilme.setDuracaoEmMinutos(95);
-        maisUmFilme.setAnoDeLancamento(1998);
+//        maisUmFilme.setAnoDeLancamento(1998);
         maisUmFilme.avalia(9);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();

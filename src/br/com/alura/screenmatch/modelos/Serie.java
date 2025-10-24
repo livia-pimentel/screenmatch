@@ -7,8 +7,12 @@ public class Serie extends Titulo{
     private int episodioPorTemporada;
     private int minutosPorEpisodio;
 
-    // Getters e Setters
+    // Construtor
+    public Serie(String nome, int anoDeLancamento) {
+        super(nome, anoDeLancamento);
+    }
 
+    // Getters e Setters
     public int getTemporadas() {
         return temporadas;
     }
