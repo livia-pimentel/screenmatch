@@ -6,6 +6,11 @@ public class Filme extends Titulo implements Classificavel {
     // Atributo
     private String diretor;
 
+    // Construtor
+    public Filme(String nome) {
+        this.setNome(nome);
+    }
+
     // Get e Set
 
     public String getDiretor() {

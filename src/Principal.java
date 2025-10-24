@@ -5,12 +5,13 @@ import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Principal {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("Top Gun");
-        meuFilme.setAnoDeLancamento(2022);
+        Filme meuFilme = new Filme("O rei leão");
+//        meuFilme.setNome("Top Gun");
+        meuFilme.setAnoDeLancamento(1992);
         meuFilme.setDuracaoEmMinutos(180);
         System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
 
@@ -31,8 +32,8 @@ public class Principal {
         lost.setMinutosPorEpisodio(50);
         System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme();
-        outroFilme.setNome("Estrelas além do tempo");
+        Filme outroFilme = new Filme("Viva a vida é uma festa");
+//        outroFilme.setNome("Estrelas além do tempo");
         outroFilme.setAnoDeLancamento(2019);
         outroFilme.setDuracaoEmMinutos(120);
 
@@ -51,8 +52,8 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtro.filtar(episodio);
 
-        Filme maisUmFilme = new Filme();
-        maisUmFilme.setNome("Hércules");
+        Filme maisUmFilme = new Filme("Pateta o filme");
+//        maisUmFilme.setNome("Hércules");
         maisUmFilme.setDuracaoEmMinutos(95);
         maisUmFilme.setAnoDeLancamento(1998);
         maisUmFilme.avalia(9);
@@ -65,6 +66,7 @@ public class Principal {
         System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
         System.out.println(listaDeFilmes);
         System.out.println("toString do " + listaDeFilmes.get(1).toString());
+
 
     }
 }
