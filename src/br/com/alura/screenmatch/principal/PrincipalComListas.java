@@ -26,9 +26,12 @@ public class PrincipalComListas {
         System.out.println("Lista:");
         for (Titulo titulo : lista) {
             System.out.println(titulo.getNome());
-            // Pegar metodos de uma subclasse fazendo o casting
-            Filme filme = (Filme) titulo;
-            System.out.println("Classificação: " + filme.getClassificacao());
+            if (titulo instanceof Filme filme && filme.getClassificacao() > 2) {
+                // Pegar metodos de uma subclasse fazendo o casting
+                //Filme filme = (Filme) titulo;
+                System.out.println("Classificação: " + filme.getClassificacao());
+            }
+
         }
     }
 }
