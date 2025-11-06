@@ -16,6 +16,8 @@ public class PrincipalComListas {
         Filme filmeAguardado = new Filme("Quarteto Fantástico", 2024);
         filmeAguardado.avalia(6);
         Serie serieFavorita = new Serie("Uma questão de química", 2023);
+        Filme outroFavorito = new Filme("Dogville", 2022);
+        filmeFavorito.avalia(3);
 
 //        ArrayList<Titulo> lista = new ArrayList<>();
         List<Titulo> lista = new LinkedList<>();
